@@ -5,7 +5,7 @@ MAINTAINER Andreas Egner <andreas.egner@web.de>
 RUN \
   apt-get update && \
   apt-get dist-upgrade -y --no-install-recommends && \
-  apt-get install -y --no-install-recommends apache2 libapache2-mod-php5 php5-gd php5-mysql &&\
+  apt-get install -y --no-install-recommends apache2 libapache2-mod-php5 php5-gd php5-mysql && \
   apt-get autoremove -y && \
   apt-get clean
 
