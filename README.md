@@ -12,6 +12,6 @@ sudo docker push eg5846/apache2
 
 ## Run apache2 docker image
 ```
-sudo docker run -d -P --name mysql eg5846/mysql
-sudo docker run -d -p 80:80 -v /export/docker/site.de:/var/www/html --link mysql:mysql --name site.de eg5846/apache2
+sudo docker run -d --restart=always -P --name mysql eg5846/mysql
+sudo docker run -d --restart=always -p 80:80 -v /export/docker/site.de:/var/www/html --link mysql:mysql --name site.de eg5846/apache2
 ```
